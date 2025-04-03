@@ -1,22 +1,25 @@
+# Smart Medical Chatbot
+
+```
 smart_medical_chatbot/
-│── main.py              # 🚀 Entry Point (Runs FastAPI Server & Gradio UI)
-│── chatbot.py           # 🤖 Core Chatbot Logic (Groq API, Speech & Text Handling)
-│── config.py            # ⚙️ Configuration Settings (Loads .env)
+├── main.py             # 🚀 Entry Point (FastAPI & Gradio UI)
+├── chatbot.py          # 🤖 Core Logic (Groq API, Speech & Text)
+├── config.py           # ⚙️ Configuration (.env Loading)
 │
-├── utils/               # 🛠️ Utility Modules
-│   ├── audio.py         # 🎙️ Handles Audio (Recording, Transcription, TTS)
-│   ├── image.py         # 🖼️ Processes Images (Encoding, Decoding)
-│   ├── stt.py           # 🗣️ Converts Speech to Text
-│   ├── tts.py           # 🔊 Converts Text to Speech
+├── utils/              # 🛠️ Utility Modules
+│   ├── audio.py        # 🎙️ Audio Handling (Record, Transcribe, TTS)
+│   ├── image.py        # 🖼️ Image Processing (Encode, Decode)
+│   ├── stt.py          # 🗣️ Speech to Text Conversion
+│   ├── tts.py          # 🔊 Text to Speech Conversion
 │
-├── services/            # 🔗 External API Integrations
+├── services/           # 🔗 External API Integrations
 │   ├── groq_client.py   # 🤖 Groq API (Vision & Text AI)
-│   ├── tts_service.py   # 🎤 ElevenLabs TTS API Calls
+│   ├── tts_service.py  # 🎤 ElevenLabs TTS API
 │
-├── interfaces/          # 🎨 User Interaction & UI
-│   ├── gradio_interface.py   # 🌐 Gradio-powered Chatbot UI
+├── interfaces/         # 🎨 User Interaction & UI
+│   ├── gradio_interface.py # 🌐 Gradio Chatbot UI
 
-
+```
 
 
 # Smart Medical Chatbot (with Vision and Voice)
@@ -37,6 +40,8 @@ This project is a smart medical chatbot that uses voice and vision input to gene
    ```bash
    pip install -r requirements.txt
 3. Run main.py
+
+
 
 # 🏗️ Smart Medical Chatbot - Tech Stack
 
