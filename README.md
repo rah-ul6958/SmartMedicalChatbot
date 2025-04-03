@@ -39,7 +39,7 @@ This project is a smart medical chatbot that uses voice and vision input to gene
 2. Create a virtual environment and install dependencies:
    ```bash
    pip install -r requirements.txt
-3. Run main.py
+3. Run app/main.py
 
 
 
