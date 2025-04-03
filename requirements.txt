@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+gradio
+pydantic
+pydantic-settings
+python-dotenv
+requests
+speechrecognition
+pydub
+gtts
+elevenlabs
+aiohttp
+pipwin
+pyaudio
