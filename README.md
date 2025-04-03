@@ -1,22 +1,24 @@
 
+# Smart Medical Chatbot Directory Structure
+
 smart_medical_chatbot/
-app/
-│── main.py              # 🚀 Entry point (Runs FastAPI server & Gradio UI)
-│── chatbot.py           # Core chatbot logic (Groq API, Speech & Text Handling)
-│── config.py            # Configuration settings (Loads .env)
-│
+├── main.py              # 🚀 Entry point (Runs FastAPI server & Gradio UI)
+├── chatbot.py           # Core chatbot logic (Groq API, Speech & Text Handling)
+├── config.py            # Configuration settings (Loads .env)
+
 ├── utils/               # Utilities (Audio, Image, Speech Processing)
 │   ├── audio.py         # Recording, Transcription, TTS ✅
 │   ├── image.py         # Image processing ✅
 │   ├── stt.py           # Speech-to-text ✅
 │   ├── tts.py           # Text-to-speech ✅
-│
+
 ├── services/            # Handles external API interactions
 │   ├── groq_client.py   # Groq API handling (Vision + Text AI)
 │   ├── tts_service.py   # ElevenLabs TTS API calls
-│
+
 ├── interfaces/          # UI & User interaction
 │   ├── gradio_interface.py   # Gradio-based Chatbot UI
+
 
 # Smart Medical Chatbot (with Vision and Voice)
 
