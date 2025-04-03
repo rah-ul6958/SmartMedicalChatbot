@@ -1,7 +1,7 @@
 # Smart Medical Chatbot
 
 ```
-app/
+|──app/
 ├── main.py             # 🚀 Entry Point (FastAPI & Gradio UI)
 ├── chatbot.py          # 🤖 Core Logic (Groq API, Speech & Text)
 ├── config.py           # ⚙️ Configuration (.env Loading)
