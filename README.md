@@ -1,21 +1,21 @@
-
 smart_medical_chatbot/
-├── 🏁 **main.py**              # 🚀 Entry point (Runs FastAPI server & Gradio UI)
-├── 🧠 **chatbot.py**           # Core chatbot logic (Groq API, Speech & Text Handling)
-├── ⚙️ **config.py**             # Configuration settings (Loads `.env`)
+│── main.py              # 🚀 Entry Point (Runs FastAPI Server & Gradio UI)
+│── chatbot.py           # 🤖 Core Chatbot Logic (Groq API, Speech & Text Handling)
+│── config.py            # ⚙️ Configuration Settings (Loads .env)
+│
+├── utils/               # 🛠️ Utility Modules
+│   ├── audio.py         # 🎙️ Handles Audio (Recording, Transcription, TTS)
+│   ├── image.py         # 🖼️ Processes Images (Encoding, Decoding)
+│   ├── stt.py           # 🗣️ Converts Speech to Text
+│   ├── tts.py           # 🔊 Converts Text to Speech
+│
+├── services/            # 🔗 External API Integrations
+│   ├── groq_client.py   # 🤖 Groq API (Vision & Text AI)
+│   ├── tts_service.py   # 🎤 ElevenLabs TTS API Calls
+│
+├── interfaces/          # 🎨 User Interaction & UI
+│   ├── gradio_interface.py   # 🌐 Gradio-powered Chatbot UI
 
-├── 🛠️ **utils/**               # Utilities (Audio, Image, Speech Processing)
-│   ├── 🎙️ **audio.py**         # Recording, Transcription, TTS ✅
-│   ├── 🖼️ **image.py**         # Image processing ✅
-│   ├── 🗣️ **stt.py**           # Speech-to-text ✅
-│   ├── 🔊 **tts.py**           # Text-to-speech ✅
-
-├── 🔗 **services/**            # Handles external API interactions
-│   ├── 🤖 **groq_client.py**   # Groq API handling (Vision + Text AI)
-│   ├── 🎤 **tts_service.py**   # ElevenLabs TTS API calls
-
-├── 🖥️ **interfaces/**          # UI & User Interaction
-│   ├── 🌐 **gradio_interface.py**   # Gradio-based Chatbot UI
 
 
 
@@ -42,12 +42,10 @@ This project is a smart medical chatbot that uses voice and vision input to gene
 
 ## ⚙️ Backend
 - **FastAPI** – High-performance web framework for the chatbot API.
-- **Uvicorn** – ASGI server for running the FastAPI application.
 
 ## 🧠 AI & NLP
 - **Groq API** – Used for text and image-based AI responses.
 - **SpeechRecognition** – Converts user speech to text (STT).
-- **gTTS (Google Text-to-Speech)** – Converts AI responses to speech (TTS).
 - **ElevenLabs API** – Optional TTS service for high-quality speech synthesis.
 
 ## 🎙️ Audio Processing
@@ -72,7 +70,6 @@ This project is a smart medical chatbot that uses voice and vision input to gene
 - **pipwin** – Helps install Windows dependencies (e.g., pyaudio).
 
 ## 🌐 Deployment
-- **Google Cloud Platform (GCP)** – Potential cloud hosting and API integrations.
 - **Gradio Share Link** – Enables public access to the chatbot UI.
-
+- **Google Cloud Platform (GCP)** – Potential cloud hosting and API integrations.
 
